@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <!-- Website Title -->
+    <title>College Housing</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+	<link href="../css/magnific-popup.css" rel="stylesheet">
+	<!-- <link href="../css/styles.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body class="rental-app-body">
+  <div class="container">
+    <div class="py-5 text-left">
+      <div class="logo-div">
+        <a href="#"><img class="rental-app-logo d-block  mb-4" src="../images/logo-2.png" alt=""></a>
+        <h2>Rental Application</h2>
+        <!-- <h3>Applicant information</h3> -->
+        <p>Welcome to our Community! We are excited to have you join us!</p>
+        <p>Please complete this application accuratley and we will be in touch with you shortly after with your next steps.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 order-md-1">
+        <h7 class="mb-3">**All Fields are required to submit the application, if any field does not apply to you please enter N/A.</h7>
+        <form class="rental-app-form needs-validation" novalidate="">
+          <div class="row">
+            <div class="col-md-6" style="border: groove; border-top:none; border-bottom: none;">
+              <h2 style="border-bottom:groove;">Applicant Information</h2>
+              <div class="row" style="padding-top:15px ;">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="First" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Last" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+
+              </div>
+              <div class="mb-3">
+                <label for="req-prop">Requested Property for Rent</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="req-prop" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Please enter requested property.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="lead-name">Group Lead Member Name</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="lead-name" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Please enter Group lead member name.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="mem-name">Group Members Names</label>
+                <div class="input-group">
+                  <textarea type="text" class="form-control" id="mem-name" placeholder="" required=""></textarea>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Please enter members names.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="c-num">Applicant Cell Phone</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="c-num" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your cell phone is required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="a-email">Applicant Email</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="a-email" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your email is required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="ssn">Applicant social security number</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="ssn" placeholder="Enter SSN" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Please enter your SSN.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="a-date">Applicant birth date</label>
+                <div class="input-group">
+                  <input type="date" id="a-date" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label for="a-add">Applicant current address</label>
+                  <select class="custom-select d-block w-100" id="a-add" placeholder="Country" required="">
+                    <option value="">Country</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+              <div class="col-md-12 mb-3">
+                <label class="d-none" for="street">Street</label>
+                <textarea type="text" class="form-control" id="street" placeholder="Street" required=""></textarea>
+                <div class="invalid-feedback">
+                  Street is required.
+                </div>
+              </div>
+              <div class="col-md-5 mb-3">
+                <label class="d-none" for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="City" required="">
+                <div class="invalid-feedback">
+                  City is required.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="d-none" for="state">State</label>
+                <select class="custom-select d-block w-100" id="state" placeholder="State" required="">
+                  <option value="">State</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="d-none" for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="Zip" required="">
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="e-amount">Estimated amount you are prepared to pay (without utilities)</label>
+              <input type="text" class="form-control" id="e-amount" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="plan-car">Are you planning on having a car: yes/no/maybe</label>
+              <input type="text" class="form-control" id="plan-car" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="car-make">Car Make</label>
+              <input type="text" class="form-control" id="car-make" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="car-model">Car Model</label>
+              <input type="text" class="form-control" id="car-model" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="c-l-plate">Car license plate number</label>
+              <input type="text" class="form-control" id="c-l-plate" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="d-l-number">Drivers License Number</label>
+              <input type="text" class="form-control" id="d-l-number" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="school">School</label>
+              <input type="text" class="form-control" id="school" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="major">Major</label>
+              <input type="text" class="form-control" id="major" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="year">Year</label>
+              <input type="text" class="form-control" id="year" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="gpa">GPA</label>
+              <input type="text" class="form-control" id="gpa" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="l-affiliations">Local affiliations - faternity, sorority, etc:</label>
+              <input type="text" class="form-control" id="l-affiliations" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="see-instructions">*See instructions. Preferred payment schedule - Quarterly, Biannual, Yearly, Monthly, or Bimonthly:</label>
+              <input type="text" class="form-control" id="see-instructions" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="who-pays">Who is paying the rent? - Self, Parents, Scholarships, Others:</label>
+              <input type="text" class="form-control" id="who-pays" placeholder="" required="">
+              <div class="invalid-feedback">
+                This field is required.
+              </div>
+            </div>
+            <label for="">It is so important that you register to vote in Collage Park (it will make a difference for YOU and future Terps). Pass this on to everyone you know - this CAN really make a difference for YOU living in College Park. Are you willing to register to vote?</label>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline1">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+              <label class="custom-control-label" for="customRadioInline2">No</label>
+            </div>
+            <div class="row" style="padding-top: 15px;">
+              <div class="col-md-12 mb-3" >
+                <label for="prop-add">Property address that you're intersted In?</label>
+                <input type="text" class="form-control" id="prop-add" placeholder="" required="">
+                <div class="invalid-feedback">
+                  This field is required.
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-6" style="border: groove; border-top: none; border-bottom: none;">
+              <h2 style="border-bottom:groove;">Guarantors</h2>
+              <div class="mb-3">
+                <label for="" style="padding-top:15px;">Both parents are required to sign the guaranty. Is there any problems with that?</label>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline3">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline4">No</label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="pass-away">If yes, please note reason: Passed away/have no contact/financially independent/other. If no, please enter N/A</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="pass-away" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    This field is required.
+                  </div>
+                </div>
+              </div>
+              <label for="">Parent 1 Name</label>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <!-- <label for="">Parent 1 Name</label> -->
+                  <input type="text" class="form-control" id="firstName1" placeholder="First" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="d-none" for="lastName1">Last name</label>
+                  <input type="text" class="form-control" id="lastName1" placeholder="Last" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label for="a-add1">Parent 1 Address</label>
+                  <select class="custom-select d-block w-100" id="a-add1" placeholder="Country" required="">
+                    <option value="">Country</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label class="d-none" for="street1">Street</label>
+                  <textarea type="text" class="form-control" id="street1" placeholder="Street" required=""></textarea>
+                  <div class="invalid-feedback">
+                    Street is required.
+                  </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label class="d-none" for="city1">City</label>
+                  <input type="text" class="form-control" id="city1" placeholder="City" required="">
+                  <div class="invalid-feedback">
+                    City is required.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label class="d-none" for="state1">State</label>
+                  <select class="custom-select d-block w-100" id="state1" placeholder="State" required="">
+                    <option value="">State</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label class="d-none" for="zip1">Zip</label>
+                  <input type="text" class="form-control" id="zip1" placeholder="Zip" required="">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="c-num1">Parent 1 Contact Number</label>
+                <div class="input-group">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="c-num1" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your cell phone is required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="a-email1">Parent 1 Email Address</label>
+                <div class="input-group">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="a-email1" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your email is required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="place-of-emp">Parent 1 Place of Employment</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="place-of-emp" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    This field is required
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="p-position">Parent 1 Position</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="p-position" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    This field is required
+                  </div>
+                </div>
+              </div>
+              <label for="">Parent 2 Name</label>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <!-- <label for="">Parent 1 Name</label> -->
+                  <input type="text" class="form-control" id="firstName2" placeholder="First" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="d-none" for="lastName2">Last name</label>
+                  <input type="text" class="form-control" id="lastName2" placeholder="Last" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label for="a-add2">Parent 1 Address</label>
+                  <select class="custom-select d-block w-100" id="a-add2" placeholder="Country" required="">
+                    <option value="">Country</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label class="d-none" for="street2">Street</label>
+                  <textarea type="text" class="form-control" id="street2" placeholder="Street" required=""></textarea>
+                  <div class="invalid-feedback">
+                    Street is required.
+                  </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label class="d-none" for="city2">City</label>
+                  <input type="text" class="form-control" id="city2" placeholder="City" required="">
+                  <div class="invalid-feedback">
+                    City is required.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label class="d-none" for="state2">State</label>
+                  <select class="custom-select d-block w-100" id="state2" placeholder="State" required="">
+                    <option value="">State</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label class="d-none" for="zip2">Zip</label>
+                  <input type="text" class="form-control" id="zip2" placeholder="Zip" required="">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="c-num2">Parent 1 Contact Number</label>
+                <div class="input-group">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-mobile-alt"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="c-num2" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your cell phone is required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="a-email2">Parent 1 Email Address</label>
+                <div class="input-group">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="a-email2" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Your email is required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="place-of-emp2">Parent 1 Place of Employment</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="place-of-emp2" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    This field is required
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="p-position2">Parent 1 Position</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="p-position2" placeholder="" required="">
+                  <div class="invalid-feedback" style="width: 100%;">
+                    This field is required
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="">Text</label>
+              <input type="text" name="" value="">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="../js/rental-app.js"></script> <!-- Custom scripts -->
+
+
+
+</body>
+</html>
