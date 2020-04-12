@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
     <!-- Website Title -->
-    <title>College Housing</title>
+    <title>TERPX</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
@@ -63,18 +63,18 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://7307hopkinsave.collegehousing.us/#highlight" target="_blank">Why TERPX</a>
+                        <a class="nav-link page-scroll" href="" target="_blank">Why TERPX</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://7307hopkinsave.collegehousing.us/#layout" target="_blank">How it worx</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://7307hopkinsave.collegehousing.us/#gallery" target="_blank">FAQ</a>
+                        <a class="nav-link page-scroll" href="" target="_blank">How it worx</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://7307hopkinsave.collegehousing.us/#contact" target="_blank">Join TERPX</a>
+                        <a class="nav-link page-scroll" href="" target="_blank">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="" target="_blank">Join TERPX</a>
                     </li>
                 </ul>
             </div>
@@ -93,17 +93,77 @@
                               <p class="home-text-2">Furniture And Sublease</p>
                               <h1 class="home-text-1">The first gateway for TERPS exchange</h1>
                               <div class="buttons-container">
-                                <span class="button-span"> <a><img src="images\join-btn.png" alt="" style="width:9rem;"></a></span>
+                                <span class="button-span"> <a><button type="button"  class="button-1  btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Join TERPX</button> </a></span>
                                 <!-- <button type="button" class="button-1 btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Us</button>  -->
                               </div>
                             </div>
                         </div> <!-- end of col -->
+
+
 
                         <div class="col-lg-7 col-md-0 boys-image-column">
                           <div class="boys-image-container">
                             <img class="boys-image" src="images\boys-lg.png" alt="Boys">
                           </div>
                         </div>
+
+                        <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="modal-welcome-text modal-text">
+                                      <!-- <p class="modal-text modal-welcome-text">Let's Exchange Furniture and Sublease</p> -->
+                                    </div>
+                                    <div class="contact-info-text">
+                                      <!-- <p class="contact-info-item modal-text">Phone: 410-680-2868</p>
+                                      <p class="contact-info-item modal-text">Fax: 240-367-9669</p>
+                                      <p class="contact-info-item modal-text">Email: contact@collegehousing.us</p> -->
+                                      <p class="modal-text modal-welcome-text" style="margin-bottom: 16px;">Welcome to Our TERPX Group</p>
+                                      <p class="modal-text modal-welcome-text">Please enter your Information to Proceed.</p>
+
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <form name="submit-to-google-sheet" role="form" id="test-form" class="modal-form">
+                                      <!-- <div class="modal-text">
+                                        Send Message
+                                      </div> -->
+                                      <!-- <div class="form-group modal-text"> -->
+                                        <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
+                                        <!-- <input type="hidden" id="propId" name="propId" value="7307">
+                                      </div> -->
+                                      <div class="form-group modal-text">
+                                        <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
+                                        <input type="text" name="Name" class="form-control" id="name" placeholder="Full Name">
+                                      </div>
+                                      <div class="form-group modal-text">
+                                        <!-- <label for="email" class="col-form-label modal-text">Email:</label> -->
+                                        <input type="email" name="Email" class="form-control" id="email" placeholder="Email">
+                                      </div>
+                                      <div class="form-group modal-text">
+                                        <!-- <label for="phone" class="col-form-label modal-text">Phone:</label> -->
+                                        <input type="phone" name="Phone" class="form-control" id="phone" placeholder="Phone">
+                                      </div>
+                                      <div class="form-group">
+                                        <!-- <label for="message-text" class="col-form-label modal-text">Message:</label> -->
+                                        <textarea class="form-control modal-text" name="Message" id="message-text" placeholder="Message"></textarea>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="button-1 btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button id="submit-form" type="submit" class="button-1 btn btn-primary">Submit</button>
+                                      </div>
+                                    </form>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
@@ -124,8 +184,8 @@
             </div>
             <div class="col-lg-6 footer-icons">
               <!-- <span class="follow-us" style="padding-right:1.5rem; font-size:12px;"> FOLLOW US</span> -->
-              <span class="social-icon" style="padding-right:1.5rem; "><a href="https://www.facebook.com/collegehousingllc/" target="_blank"><i class="fa fa-facebook fa-1x" style="color:#fff;"></i></a></span>
-              <span class="social-icon" style="padding-right:0; "><a href="https://www.instagram.com/college_housing/?hl=en" target="_blank"><i class="fa fa-instagram fa-1x" style="color:#fff;"></i></a></span>
+              <span class="social-icon" style="padding-right:1.5rem; "><a href="" target="_blank"><i class="fa fa-facebook fa-1x" style="color:#fff;"></i></a></span>
+              <span class="social-icon" style="padding-right:0; "><a href="" target="_blank"><i class="fa fa-instagram fa-1x" style="color:#fff;"></i></a></span>
             </div>
 
           </div>
@@ -143,7 +203,7 @@
         <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
         <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
-        <script src="js\google_script_form_ajax.js"></script> <!-- Custom scripts -->
+        <script src="js/spread-sheet.js"></script> <!-- Custom scripts -->
 
     </div>
   </div>

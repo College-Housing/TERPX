@@ -105,7 +105,7 @@ h6 {
 }
 
 .button-1:hover{
-  background-color: white;
+  /* background-color: white; */
 }
 
 a {
@@ -131,11 +131,11 @@ a.white {
 }
 
 .modal-text{
-  color: black;
+  color: #707981;
 }
 
 .modal-welcome-text{
-  font-size: 24px;
+  font-size: 20px;
   line-height: normal;
   margin-bottom: 3rem;
   margin-top: 1rem;
@@ -753,7 +753,7 @@ a:hover.back-to-top {
 } */
 
 .button-1{
-  background-color: #F4D357;
+  /* background-color: #F4D357;
   border: none;
   color: black;
   text-align: center;
@@ -761,25 +761,25 @@ a:hover.back-to-top {
   display: inline-block;
   font-size: 16px;
   padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-right: 0.5rem; */
   /* margin: 4px 2px; */
   cursor: pointer;
-  border-radius: 8px;
+  /*border-radius: 8px;
   width: 7rem;
   border:  #F4D357 !important;
   border-color:  #F4D357 !important;
   border-style: solid !important;
   padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.2rem; */
 
 }
 
 .button-1:hover {
-  background-color: white !important;
+  /* background-color: white !important;
   color: #212529 !important;
   border:  #F4D357 !important;
   border-color:  #F4D357 !important;
-  border-style: solid !important;
+  border-style: solid !important; */
 }
 
 .social-icon{
@@ -1060,7 +1060,7 @@ a:hover.back-to-top {
     left: 140px; */
   }
   .footer-icons{
-    text-align: center !important;
+    text-align: center !importantbu;
   /* padding-right: 0rem; */
   }
 
