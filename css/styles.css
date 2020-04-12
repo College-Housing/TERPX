@@ -1036,6 +1036,7 @@ a:hover.back-to-top {
      padding-top: 0.3rem;
   }
   .header .text-container{
+    /* height: 100vh; */
     padding-top: 5rem;
     margin-left: 0rem;
     /* margin-left: auto; */
@@ -1054,13 +1055,17 @@ a:hover.back-to-top {
   }
 
   .boys-image-column{
-    display: none;
+    /* display: none; */
     /* bottom: 800px;
     right: 20px;
     left: 140px; */
   }
+  .boys-image{
+    width: 100% !important;
+    position: static !important;
+  }
   .footer-icons{
-    text-align: center !importantbu;
+    text-align: center !important;
   /* padding-right: 0rem; */
   }
 
@@ -1142,7 +1147,13 @@ a:hover.back-to-top {
   }
 
   .boys-image-column{
-    display: none;
+    /* display: none; */
+    /* position: static; */
+    /* width: 100%; */
+  }
+  .boys-image{
+    width: 100% !important;
+    position: static !important;
   }
   .main-container{
     width: 100%;
@@ -1154,8 +1165,9 @@ a:hover.back-to-top {
     background-size: cover;
     /* Full height */
     /* height: 100%; */
-
-    /* Center and scale the image nicely */
+  }
+  .footer-text{
+    font-size: 0.9rem ;
   }
 }
 @media (max-width: 1092px) and (min-width: 768px) {
