@@ -27,8 +27,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+  	<link href="css/magnific-popup.css" rel="stylesheet">
+  	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
 
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -51,7 +52,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">College</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
+            <a class="navbar-brand logo-image nav-link" onclick="openTab(event, 'Home-Tab')"><img src="images/logo.png" alt="alternative"></a>
 
             <!-- Mobile Menu Toggle Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,18 +64,18 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="" target="_blank">Why TERPX</a>
+                        <a class="nav-link page-scroll" onclick="openTab(event, 'Tab-1')" >Why TERPX</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="" target="_blank">How it worx</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="" target="_blank">FAQ</a>
+                        <a class="nav-link page-scroll" onclick="openTab(event, 'Tab-2')" >How it worx</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="" target="_blank">Join TERPX</a>
+                        <a class="nav-link page-scroll" onclick="openTab(event, 'Tab-3')">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" data-toggle="modal" data-target="#myModal">Join TERPX</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +87,7 @@
         <header id="header" class="header">
             <div class="header-content">
                 <div class="container" style="max-width: 1200px">
-                    <div class="row">
+                    <div id="Home-Tab" class="row tab-row" style="display:flex;">
                         <div class="col-lg-5 col-md-12 text-box-column" style="height:80vh;">
                             <div class="text-container">
                               <p class="bold-header">Let's Exchange</p>
@@ -107,66 +108,103 @@
                           </div>
                         </div>
 
-                        <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                              <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                                <div class="row">
-                                  <div class="col-lg-6">
-                                    <div class="modal-welcome-text modal-text">
-                                      <!-- <p class="modal-text modal-welcome-text">Let's Exchange Furniture and Sublease</p> -->
-                                    </div>
-                                    <div class="contact-info-text">
-                                      <!-- <p class="contact-info-item modal-text">Phone: 410-680-2868</p>
-                                      <p class="contact-info-item modal-text">Fax: 240-367-9669</p>
-                                      <p class="contact-info-item modal-text">Email: contact@collegehousing.us</p> -->
-                                      <p class="modal-text modal-welcome-text" style="margin-bottom: 16px;">Welcome to Our TERPX Group</p>
-                                      <p class="modal-text modal-welcome-text">Please enter your Information to Proceed.</p>
 
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-6">
-                                    <form name="submit-to-google-sheet" role="form" id="test-form" class="modal-form">
-                                      <!-- <div class="modal-text">
-                                        Send Message
-                                      </div> -->
-                                      <!-- <div class="form-group modal-text"> -->
-                                        <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
-                                        <!-- <input type="hidden" id="propId" name="propId" value="7307">
-                                      </div> -->
-                                      <div class="form-group modal-text">
-                                        <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
-                                        <input type="text" name="Name" class="form-control" id="name" placeholder="Full Name">
-                                      </div>
-                                      <div class="form-group modal-text">
-                                        <!-- <label for="email" class="col-form-label modal-text">Email:</label> -->
-                                        <input type="email" name="Email" class="form-control" id="email" placeholder="Email">
-                                      </div>
-                                      <div class="form-group modal-text">
-                                        <!-- <label for="phone" class="col-form-label modal-text">Phone:</label> -->
-                                        <input type="phone" name="Phone" class="form-control" id="phone" placeholder="Phone">
-                                      </div>
-                                      <div class="form-group">
-                                        <!-- <label for="message-text" class="col-form-label modal-text">Message:</label> -->
-                                        <textarea class="form-control modal-text" name="Message" id="message-text" placeholder="Message"></textarea>
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="button-1 btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button id="submit-form" type="submit" class="button-1 btn btn-primary">Submit</button>
-                                      </div>
-                                    </form>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
                     </div> <!-- end of row -->
+                    <div id="Tab-1" class="row tab-row" style="">
+                      <div class="row">
+                        <!-- <div class="col-lg-1">
+
+                        </div> -->
+                        <div class="col-lg-12 text-box-column">
+                          <h2 style="color:#C8102E;">Why TERPX?</h2>
+                          <p style="color:#14435D;">Moving can be stressful, expensive, and time consuming! TERPX will give you a peace of mind when it comes to buying, selling, or exchanging furniture, school materials and supplies, and even exchanging your lease with another student through a simple, easy, and trusted process available only to University of Maryland students so that you can have a smoother, cost-effective, and time efficient moving experience. </p>
+                        </div>
+                        <!-- <div class="col-lg-1">
+
+                        </div> -->
+                      </div>
+                      <div class="row" style="width:100%;">
+                        <!-- <div class="col-lg-1">
+
+                        </div> -->
+                        <div class="col-lg-12">
+                          <h2 style="color:#C8102E;">TERPX BENEFITS</h2>
+                          <ul style="color:#14435D;">
+                            <li>Join a trusted community of UMD Students</li>
+                            <li>Save money on buying used items </li>
+                            <li>Save time finding what you are looking for</li>
+                            <li>Exchange your lease with another student at no cost</li>
+                            <li>Get all the above benefits completely free of charge!</li>
+                          </ul>
+                        </div>
+                        <!-- <div class="col-lg-1">
+
+                        </div> -->
+                      </div>
+
+                    </div>
+                    <div id="Tab-2" class="row tab-row" style="">
+                      <div class="row">
+                        <!-- <div class="col-lg-1">
+
+                        </div> -->
+                        <div class="col-lg-12 text-box-column">
+                          <h2 style="color:#C8102E;">How it worx?</h2>
+                          <h3 style="color:#14435D;">Join a trusted community of UMD students and begin exchanging right away in three easy steps:</h3>
+                          <ul style="color:#14435D;">
+                            <li>Join a trusted community of UMD Students</li>
+                            <li>Save money on buying used items </li>
+                            <li>Save time finding what you are looking for</li>
+                            <li>Exchange your lease with another student at no cost</li>
+                            <li>Get all the above benefits completely free of charge!</li>
+                          </ul>
+                        </div>
+                        <!-- <div class="col-lg-1">
+
+                        </div> -->
+                      </div>
+                    </div>
+                    <div id="Tab-3" class="row tab-row" >
+                      <div class="row">
+                        <!-- <div class="col-lg-1">
+
+                        </div> -->
+                        <div class="col-lg-12 text-box-column">
+                          <h2 style="color:#C8102E;">FAQ</h2>
+                          <h4 style="color:#14435D;">Join a trusted community of UMD students and begin exchanging right away in three easy steps:</h4>
+                          <h6 style="color:#14435D;">1.Do I have to be a UMD student to Join TERPX?</h6>
+                          <ul style="color:#14435D;">
+                            <li>Yes</li>
+                          </ul>
+                          <h6 style="color:#14435D;">2.Which UMD campus is part of TERPX?</h6>
+                          <ul style="color:#14435D;">
+                            <li>TERPX is available for all UMD campuses</li>
+                          </ul>
+                          <h6 style="color:#14435D;">3.Is there a cost for using TERPX?</h6>
+                          <ul style="color:#14435D;">
+                            <li>No. TERPX is available completely free of charge for UMD students.</li>
+                          </ul>
+                          <h6 style="color:#14435D;">4.What can I sell or exchange?</h6>
+                          <ul style="color:#14435D;">
+                            <li>Furniture.</li>
+                            <li>School materials and supplies</li>
+                            <li>Lease agreements (Another student can replace you on the lease)</li>
+                          </ul>
+                          <h6 style="color:#14435D;">5.How can I pay for my purchases?</h6>
+                          <ul style="color:#14435D;">
+                            <li>You will contact the student directly and discuss the payment method that works for you. TERPX does not interfere in how payments between students are made. </li>
+                          </ul>
+                          <h6 style="color:#14435D;">6.How the lease exchange works?</h6>
+                          <ul style="color:#14435D;">
+                            <li>Once you find another student who agrees to replace you on the lease if you need to leave, simply send College Housing an email request at contact@collegehousing.us with the name and email of the student replacing you. A representative will then contact the student and guides them through the process.</li>
+                          </ul>
+                        </div>
+                        <!-- <div class="col-lg-1">
+                        </div> -->
+                      </div>
+                    </div>
                 </div> <!-- end of container -->
+
             </div> <!-- end of header-content -->
         </header> <!-- end of header -->
         <!-- end of header -->
@@ -178,7 +216,7 @@
         </footer>
           <!-- Footer -->
           <div class="row footer-row">
-            <div class="col-lg-6 footer-text">
+            <div style="color:white;" class="col-lg-6 footer-text">
               <span style="padding-right:1.5rem;">© 2020 </span>
               <span>TERPX Exchange All Rights Reserved.</span>
             </div>
@@ -189,6 +227,64 @@
             </div>
 
           </div>
+          <div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="modal-welcome-text modal-text">
+                        <!-- <p class="modal-text modal-welcome-text">Let's Exchange Furniture and Sublease</p> -->
+                      </div>
+                      <div class="contact-info-text">
+                        <!-- <p class="contact-info-item modal-text">Phone: 410-680-2868</p>
+                        <p class="contact-info-item modal-text">Fax: 240-367-9669</p>
+                        <p class="contact-info-item modal-text">Email: contact@collegehousing.us</p> -->
+                        <p class="modal-text modal-welcome-text" style="margin-bottom: 16px;">Welcome to Our TERPX Group</p>
+                        <p class="modal-text modal-welcome-text">Please enter your Information to Proceed.</p>
+
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <form name="submit-to-google-sheet" role="form" id="test-form" class="modal-form">
+                        <!-- <div class="modal-text">
+                          Send Message
+                        </div> -->
+                        <!-- <div class="form-group modal-text"> -->
+                          <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
+                          <!-- <input type="hidden" id="propId" name="propId" value="7307">
+                        </div> -->
+                        <div class="form-group modal-text">
+                          <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
+                          <input type="text" name="Name" class="form-control" id="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group modal-text">
+                          <!-- <label for="email" class="col-form-label modal-text">Email:</label> -->
+                          <input type="email" name="Email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group modal-text">
+                          <!-- <label for="phone" class="col-form-label modal-text">Phone:</label> -->
+                          <input type="phone" name="Phone" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                          <!-- <label for="message-text" class="col-form-label modal-text">Message:</label> -->
+                          <textarea class="form-control modal-text" name="Message" id="message-text" placeholder="Message"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="button-1 btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button id="submit-form" type="submit" class="button-1 btn btn-primary">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
 
 
 
@@ -204,6 +300,7 @@
         <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
         <script src="js/spread-sheet.js"></script> <!-- Custom scripts -->
+        <script src="js/nav.js"></script> <!-- Custom scripts -->
 
     </div>
   </div>
