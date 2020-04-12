@@ -6,8 +6,8 @@
 
 
 (function($) {
-    "use strict"; 
-	
+    "use strict";
+
 	/* Preloader */
 	$(window).on('load', function() {
 		var preloaderFadeOutTime = 500;
@@ -20,28 +20,39 @@
 		hidePreloader();
 	});
 
-	
+
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
-    $(window).on('scroll load', function() {
-		if ($(".navbar").offset().top > 20) {
-			$(".fixed-top").addClass("top-nav-collapse");
-		} else {
-			$(".fixed-top").removeClass("top-nav-collapse");
-		}
-    });
+    // $(window).on('scroll load', function() {
+		// if ($(".navbar").offset().top > 20) {
+		// 	$(".fixed-top").addClass("top-nav-collapse");
+		// } else {
+		// 	$(".fixed-top").removeClass("top-nav-collapse");
+		// }
+    // });
 
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
-	$(function() {
-		$(document).on('click', 'a.page-scroll', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 600, 'easeInOutExpo');
-			event.preventDefault();
-		});
-	});
+	// $(function() {
+	// 	$(document).on('click', 'a.page-scroll', function(event) {
+	// 		var $anchor = $(this);
+	// 		$('html, body').stop().animate({
+	// 			scrollTop: $($anchor.attr('href')).offset().top
+	// 		}, 600, 'easeInOutExpo');
+	// 		event.preventDefault();
+	// 	});
+	// });
 
+  $(window).scroll(function(e) {
+
+      // add/remove class to navbar when scrolling to hide/show
+      var scroll = $(window).scrollTop();
+      if (scroll >= 50) {
+          $('.navbar').addClass("navbar-hide");
+      } else {
+          $('.navbar').removeClass("navbar-hide");
+      }
+
+  });
     // closes the responsive menu on menu item click
     $(".navbar-nav li a").on("click", function(event) {
     if (!$(this).parent().hasClass('dropdown'))
@@ -61,7 +72,7 @@
 			// Called after the entrance animation is executed.
 		}
     });
-    
+
 
     /* Card Slider - Swiper */
 	var cardSlider = new Swiper('.card-slider', {
@@ -84,11 +95,11 @@
             // when window is <= 768px
             768: {
                 slidesPerView: 1
-            } 
+            }
         }
     });
 
-    
+
     /* Image Slider - Swiper */
     var imageSlider = new Swiper('.image-slider', {
         autoplay: {
@@ -149,7 +160,7 @@
 		}
     });
 
-    
+
     /* Video Lightbox - Magnific Popup */
     $('.popup-youtube, .popup-vimeo').magnificPopup({
         disableOn: 700,
@@ -161,8 +172,8 @@
         iframe: {
             patterns: {
                 youtube: {
-                    index: 'youtube.com/', 
-                    id: function(url) {        
+                    index: 'youtube.com/',
+                    id: function(url) {
                         var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
                         if ( !m || !m[1] ) return null;
                         return m[1];
@@ -170,8 +181,8 @@
                     src: 'https://www.youtube.com/embed/%id%?autoplay=1'
                 },
                 vimeo: {
-                    index: 'vimeo.com/', 
-                    id: function(url) {        
+                    index: 'vimeo.com/',
+                    id: function(url) {
                         var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
                         if ( !m || !m[5] ) return null;
                         return m[5];
@@ -195,12 +206,12 @@
 		removalDelay: 300,
 		mainClass: 'my-mfp-slide-bottom'
 	});
-    
+
 
     /* Counter - CountTo */
 	var a = 0;
 	$(window).scroll(function() {
-		if ($('#counter').length) { // checking if CountTo section exists in the page, if not it will not run the script and avoid errors	
+		if ($('#counter').length) { // checking if CountTo section exists in the page, if not it will not run the script and avoid errors
 			var oTop = $('#counter').offset().top - window.innerHeight;
 			if (a == 0 && $(window).scrollTop() > oTop) {
 			$('.counter-value').each(function() {
@@ -262,7 +273,7 @@
         $.ajax({
             type: "POST",
             url: "php/contactform-process.php",
-            data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms, 
+            data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms,
             success: function(text) {
                 if (text == "success") {
                     cformSuccess();
@@ -316,11 +327,11 @@
 		var email = $("#pemail").val();
         var select = $("#pselect").val();
         var terms = $("#pterms").val();
-        
+
         $.ajax({
             type: "POST",
             url: "php/privacyform-process.php",
-            data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 
+            data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms,
             success: function(text) {
                 if (text == "success") {
                     pformSuccess();
@@ -352,7 +363,7 @@
         }
         $("#pmsgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
-    
+
 
     /* Back To Top Button */
     // create the back to top button
