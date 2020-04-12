@@ -1,5 +1,5 @@
-# College Housing
+# TERPX
 
 ## Click this link to view website:
 
-https://college-housing.github.io/web-1/index.html
+https://college-housing.github.io/TERPX/index.html
