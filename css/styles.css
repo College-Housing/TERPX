@@ -1261,3 +1261,29 @@ padding-right: 0rem;
 .empty-space{
   visibility: hidden;
 }
+
+
+/* ======================== */
+/* FORM VALIDATOR CSS STYLE */
+/* ======================== */
+.form-group.has-error.has-danger {
+	margin-bottom: 0.625rem;
+  color: red;
+}
+
+.form-group.has-error.has-danger .help-block.with-errors ul {
+	margin-top: 0.375rem;
+  color: #dc1717;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#cmsgSubmit.h3.text-center.tada.animated,
+#pmsgSubmit.h3.text-center.tada.animated,
+#cmsgSubmit.h3.text-center,
+#pmsgSubmit.h3.text-center {
+	display: block;
+	margin-bottom: 0;
+	color: #dc1717;
+	font: 400 1.125rem/1rem "Open Sans", sans-serif;
+}

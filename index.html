@@ -249,37 +249,40 @@
                       </div>
                     </div>
                     <div class="col-lg-6">
-                      <form name="submit-to-google-sheet" role="form" id="test-form" class="modal-form">
-                        <!-- <div class="modal-text">
-                          Send Message
-                        </div> -->
-                        <!-- <div class="form-group modal-text"> -->
-                          <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
-                          <!-- <input type="hidden" id="propId" name="propId" value="7307">
-                        </div> -->
+                      <form name="submit-to-google-sheet" role="form" id="contactForm" class="modal-form" data-toggle="validator" data-focus="false">
                         <div class="form-group modal-text empty-space">
                           <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
                           <input type="date" id="submitDate" name="submitDate" value="YYYY-MM-DD">
                         </div>
-                        <div class="form-group modal-text">
+                        <div class="form-group has-feedback modal-text">
                           <!-- <label for="name" class="col-form-label modal-text">Name:</label> -->
-                          <input type="text" name="Name" class="form-control" id="name" placeholder="Full Name">
+                          <input required type="text" name="Name" class="form-control form-control-input" id="cname" placeholder="Full Name" required>
+                          <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group modal-text">
                           <!-- <label for="email" class="col-form-label modal-text">Email:</label> -->
-                          <input type="email" name="Email" class="form-control" id="email" placeholder="Email">
+                          <input type="email" name="Email" class="form-control validate" id="cemail" placeholder="Email" required>
+                          <div class="help-block with-errors"></div>
+
                         </div>
                         <div class="form-group modal-text">
                           <!-- <label for="phone" class="col-form-label modal-text">Phone:</label> -->
-                          <input type="phone" name="Phone" class="form-control" id="phone" placeholder="Phone">
+                          <input type="phone" name="Phone" class="form-control form-control-input validate" id="phone" placeholder="Phone" required>
+                          <div class="help-block with-errors"></div>
+
                         </div>
                         <div class="form-group">
                           <!-- <label for="message-text" class="col-form-label modal-text">Message:</label> -->
-                          <textarea class="form-control modal-text" name="Message" id="message-text" placeholder="Message"></textarea>
+                          <textarea class="form-control modal-text validate" name="Message" id="cmessage" placeholder="Message" required></textarea>
+                          <div class="help-block with-errors"></div>
+
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="button-1 btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button id="submit-form"  type="submit" class="button-1 btn btn-primary">Submit</button>
+                          <button id="submit-form"  type="submit" class="button-1 btn btn-primary form-control-submit-button">Submit</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                       </form>
                     </div>
@@ -295,16 +298,16 @@
 
         <!-- Scripts -->
         <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-        <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
         <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-        <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+        <script src="js/validator.min.js"></script>
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
-        <script src="js/spread-sheet.js"></script> <!-- Custom scripts -->
+        <script src="js/spread-sheet.js"></script>
         <script src="js/nav.js"></script> <!-- Custom scripts -->
+        <script src="js\form.js"></script> <!-- Custom scripts -->
 
     </div>
   </div>

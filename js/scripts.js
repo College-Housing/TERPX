@@ -266,26 +266,21 @@
         }
     });
 
+    function spreadsheet(){
+
+    }
+
     function csubmitForm() {
-        // initiate variables with form content
-		var name = $("#cname").val();
-		var email = $("#cemail").val();
-        var message = $("#cmessage").val();
-        var terms = $("#cterms").val();
-        $.ajax({
-            type: "POST",
-            url: "php/contactform-process.php",
-            data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms,
-            success: function(text) {
-                if (text == "success") {
-                    cformSuccess();
-                } else {
-                    cformError();
-                    csubmitMSG(false, text);
-                }
-            }
-        });
-	}
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyb8_-1BNT8SLLrX6yB6QHI4KpapDMA1xDKcyibSNrSz_yi4w/exec'
+      const form = document.forms['submit-to-google-sheet']
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+
+        $('#myModal').modal('toggle'); //or  $('#IDModal').modal('hide');
+        return false;
+
+	 }
 
     function cformSuccess() {
         $("#contactForm")[0].reset();
