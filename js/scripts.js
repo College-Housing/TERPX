@@ -76,8 +76,8 @@
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyb8_-1BNT8SLLrX6yB6QHI4KpapDMA1xDKcyibSNrSz_yi4w/exec'
       const form = document.forms['submit-to-google-sheet']
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
+        // .then(response => console.log('Success!', response))
+        // .catch(error => console.error('Error!', error.message))
 
       openInNewTab("https://www.facebook.com/groups/149665539688349/?ref=share");
 
@@ -107,23 +107,6 @@
         }
         $("#cmsgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
-
-
-
-
-
-
-    /* Back To Top Button */
-    // create the back to top button
-    // $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
-    // var amountScrolled = 700;
-    // $(window).scroll(function() {
-    //     if ($(window).scrollTop() > amountScrolled) {
-    //         $('a.back-to-top').fadeIn('500');
-    //     } else {
-    //         $('a.back-to-top').fadeOut('500');
-    //     }
-    // });
 
 
 	/* Removes Long Focus On Buttons */
