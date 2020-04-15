@@ -266,8 +266,9 @@
         }
     });
 
-    function spreadsheet(){
-
+    function openInNewTab(url) {
+      var win = window.open(url, '_blank');
+      win.focus();
     }
 
     function csubmitForm() {
@@ -276,6 +277,8 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
+
+      openInNewTab("https://www.facebook.com/groups/149665539688349/?ref=share");
 
         $('#myModal').modal('toggle'); //or  $('#IDModal').modal('hide');
         return false;
