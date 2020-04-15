@@ -1258,3 +1258,6 @@ padding-right: 0rem;
   text-align: center;
 }
 /*//////////////////////////////////////Modal///////////////////////////////////*/
+.empty-space{
+  visibility: hidden;
+}
