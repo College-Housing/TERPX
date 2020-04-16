@@ -73,7 +73,7 @@
     }
 
     function csubmitForm() {
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyb8_-1BNT8SLLrX6yB6QHI4KpapDMA1xDKcyibSNrSz_yi4w/exec'
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxrFIJCKsvRQQSSk-RYokeYJx3nu_4GEzAt0yaNMIpm-Ey57iE/exec'
       const form = document.forms['submit-to-google-sheet']
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         // .then(response => console.log('Success!', response))
