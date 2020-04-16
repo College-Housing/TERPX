@@ -125,6 +125,7 @@ function setInputDate(_id){
         d = hoy.getDate(),
         m = hoy.getMonth()+1,
         y = hoy.getFullYear(),
+        t = hoy.toTimeString(),
         data;
 
     if(d < 10){
@@ -134,7 +135,7 @@ function setInputDate(_id){
         m = "0"+m;
     };
 
-    data = y+"-"+m+"-"+d;
+    data = y+"-"+m+"-"+d+" ("+t+")";
     console.log(data);
     _dat.value = data;
 };
