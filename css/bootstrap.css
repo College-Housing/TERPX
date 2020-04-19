@@ -2421,7 +2421,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
+  background-color: #1488f1;
   border-color: #007bff;
 }
 
@@ -2970,6 +2970,8 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
