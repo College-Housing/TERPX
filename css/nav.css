@@ -19,36 +19,36 @@
 
 #Tab-1{
   display: none;
-  height:auto;
+  /* height:auto; */
   padding-top:80px;
-  padding-bottom:150px;
+  /* padding-bottom:150px; */
   padding-left: 50px;
   padding-right: 50px;
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   overflow-y: auto;
 }
 #Tab-2{
   display: none;
-  height:auto;
+  /* height:auto; */
   padding-top:80px;
-  padding-bottom:200px;
+  /* padding-bottom:200px; */
   padding-left: 50px;
   padding-right: 50px;
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   overflow-y: auto;
 }
 #Tab-3{
   display: none;
-  height:auto;
+  /* height:auto; */
   margin-bottom: 4rem;
   padding-top:80px;
-  padding-bottom:100px;
+  /* padding-bottom:100px; */
   padding-left: 50px;
   padding-right: 50px;
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   overflow-y: auto;
 }
 .row{
