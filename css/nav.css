@@ -58,6 +58,14 @@
 .row{
   text-align: left !important;
 }
+.accordion{
+  padding-bottom: 2rem;
+}
+.accordion-header{
+  text-align: left;
+}
+
+
 @media (max-width: 767px) and (min-width: 0px) {
   #Tab-1{
     margin-bottom: 4rem;
