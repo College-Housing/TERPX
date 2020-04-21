@@ -468,14 +468,26 @@ a.white {
 
 }
 
-.bold-header{
+.bold-header-1{
   font-family: Arial, Helvetica, sans-serif;
 
-  font-size: 2.3rem;
+  font-size: 4.8rem;
   font-weight: bold;
   color: #000000;
   margin-bottom: 0px;
 
+}
+.bold-header-2{
+  font-size: 4.2rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0px;
+}
+.bold-header-3{
+  font-size: 4.35rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0px;
 }
 
 .video-container{
@@ -621,7 +633,7 @@ a.white {
   }
   .buttons-container {
     margin-left: auto;
-    margin-right: 6rem;
+    margin-right: 5rem;
     text-align: center;
     padding-top: 1rem;
     width: 19rem;
@@ -775,7 +787,7 @@ a.white {
     margin-right: auto;
     text-align: left;
     width: auto;
-    line-height: 2.7rem;
+    line-height: 4.5rem;
 		margin-top: 6rem;
     padding-left: 3rem;
     /* margin-left: 5.5rem; */
@@ -839,7 +851,7 @@ a.white {
     /* margin-left: auto; */
     margin-right: auto;
     text-align: center;
-    line-height: 2.7rem;
+    line-height: 3.6rem;
   }
   .buttons-container {
     padding-top: 2rem;
@@ -936,7 +948,7 @@ a.white {
 
   .text-container{
     padding-top: 5rem;
-    line-height: 2.8rem;
+    line-height: 4.2rem;
     /* margin-top: auto;
     margin-bottom: auto; */
   }
@@ -986,13 +998,19 @@ a.white {
     /* display: none; */
   }
   .home-text-1{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .home-text-2{
     font-size: 1.9rem;
   }
-  .bold-header{
-    font-size: 2.3rem;
+  .bold-header-1{
+    font-size: 4rem;
+  }
+  .bold-header-2{
+    font-size: 3.5rem;
+  }
+  .bold-header-3{
+    font-size: 3.5rem;
   }
 }
 
