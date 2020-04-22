@@ -134,11 +134,25 @@ a.white {
   color: #707981;
 }
 
-.modal-welcome-text{
-  font-size: 20px;
-  line-height: normal;
+/* .modal-welcome-text{
+
   margin-bottom: 3rem;
   margin-top: 1rem;
+} */
+.modal-welcome-text-1{
+  /* margin-bottom: 16px; */
+  color: #454647;
+  font-size: 20px;
+  line-height: 10px;
+}
+.modal-welcome-text-2{
+  margin-bottom: 14px;
+  font-size: 14px;
+
+}
+
+.contact-info-text{
+line-height: 10px; 
 }
 
 .contact-info-item{
