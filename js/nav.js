@@ -10,4 +10,14 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "flex";
   evt.currentTarget.className += " active";
+
+  if(tabName == "Home-Tab"){
+    $(".main-container").removeClass("main-container-with-no-bg");
+    $(".main-container").addClass("main-container-with-bg");
+  }
+  else {
+    $(".main-container").removeClass("main-container-with-bg");
+    $(".main-container").addClass("main-container-with-no-bg");
+  }
+
 }

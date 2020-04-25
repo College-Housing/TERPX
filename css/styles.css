@@ -30,7 +30,7 @@ html {
   /* background-color: #327DBE; */
 }
 
-.main-container{
+.main-container-with-bg{
   width: 100%;
   height:auto;
   background-color: #fff;
@@ -42,8 +42,19 @@ html {
   /* height: 100%; */
 
   /* Center and scale the image nicely */
+}
+.main-container-with-no-bg{
+  width: 100%;
+  height:auto;
+  background-color: #fff;
+  background: none ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Full height */
+  /* height: 100%; */
 
-
+  /* Center and scale the image nicely */
 }
 
 body, p {
@@ -152,7 +163,7 @@ a.white {
 }
 
 .contact-info-text{
-line-height: 10px; 
+line-height: 10px;
 }
 
 .contact-info-item{
@@ -622,6 +633,15 @@ line-height: 10px;
 /* Min-width width 768px */
 @media (min-width: 768px) {
 
+  .faq-img-div{
+    text-align: center;
+    padding-top:30vh;
+    padding-bottom: 2vh;
+  }
+  .faq-img{
+    width:85%;
+  }
+
   .header .header-content {
     padding-top: 8rem;
     /* padding-bottom: 7rem; */
@@ -747,7 +767,14 @@ line-height: 10px;
 @media (min-width: 992px) {
 
 	/* Navigation */
-
+  .faq-img-div{
+    text-align: center;
+    padding-top:30vh;
+    padding-bottom: 2vh;
+  }
+  .faq-img{
+    width:85%;
+  }
 
 	.navbar-custom .fa-stack {
 		margin-bottom: 0.1875rem;
@@ -824,6 +851,14 @@ line-height: 10px;
 
 /* Max-width = 991 - Min-width =768 */
 @media (max-width: 991px) and (min-width: 768px){
+  .faq-img-div{
+    text-align: center;
+    padding-top:30vh;
+    padding-bottom: 2vh;
+  }
+  .faq-img{
+    width:85%;
+  }
   .navbar-custom .navbar-brand.logo-image img {
     width:200px;
     /* height: 34px; */
@@ -1000,8 +1035,30 @@ line-height: 10px;
   .footer-text{
     font-size: 0.9rem ;
   }
+  .faq-img-div{
+    text-align: center;
+    padding-top:1vh;
+    padding-bottom: 2vh;
+  }
+  .faq-img{
+    width: 60%;
+  }
+
+  .inner-page-heading{
+    font-size: 1.3rem;
+  }
 }
 @media (max-width: 1092px) and (min-width: 768px) {
+
+  .faq-img-div{
+    text-align: center;
+    padding-top:30vh;
+    padding-bottom: 2vh;
+  }
+  .faq-img{
+    width:85%;
+  }
+
   .footer-text{
     /* width: 70%; */
   }
@@ -1098,6 +1155,17 @@ padding-right: 0rem;
 .empty-space{
   visibility: hidden;
 }
+
+.terpx-benefits-img{
+  padding-bottom: 20vh;
+  text-align: center;
+}
+.terpx-benefits{
+  padding-top: 10vh;
+}
+
+
+
 
 
 /* ======================== */
